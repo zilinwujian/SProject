@@ -8,6 +8,7 @@ import org.springframework.beans.BeanUtils;
 import com.ynwi.ssh.beans.User;
 import com.ynwi.ssh.dao.BaseDao;
 import com.ynwi.ssh.forms.UserForm;
+import com.ynwi.ssh.forms.UserRegForm;
 import com.ynwi.ssh.service.UserManager;
 
 public class UserManagerImpl implements UserManager {
@@ -19,9 +20,8 @@ public class UserManagerImpl implements UserManager {
 	}
 
 	@Override
-	public void regUser(UserForm userForm) throws HibernateException {
+	public void regUser(UserRegForm userForm) throws HibernateException {
 		User user = new User();
-		user.setType("M");
 		BeanUtils.copyProperties(userForm, user);
 		dao.saveObject(user);
 	}

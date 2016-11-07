@@ -9,7 +9,7 @@
 	<package name="ynwi" extends="struts-default">
 		<action name="register" class="regAction">
 			<result name="input">/Register.jsp</result>
-			<result name="success">/Success.jsp</result>
+			<result name="success">/Login.jsp</result>
 			<result name="error">/Fail.jsp</result>
 		</action>
 		<action name="check" class="checkAction">
@@ -89,6 +89,12 @@
 			<result name="error">/Fail.jsp</result>
 		</action>
 		
+		
+		<action name="allriskaction" class="allriskAction">
+			<result name="input">/Index.jsp</result>
+			<result name="success">/Risklist.jsp</result>
+			<result name="error">/Fail.jsp</result>
+		</action>
 		<action name="allbuyaction" class="allbuyAction">
 			<result name="input">/Index.jsp</result>
 			<result name="success">/Buylist.jsp</result>

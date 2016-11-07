@@ -2,21 +2,24 @@ package com.ynwi.ssh.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.ynwi.ssh.forms.UserForm;
+import com.ynwi.ssh.forms.UserRegForm;
 import com.ynwi.ssh.service.UserManager;
 
 public class RegisterAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 
-	private UserForm user;
+	private UserRegForm user;
 
 	private UserManager userManager;
 
-	public UserForm getUser() {
+
+
+	public UserRegForm getUser() {
 		return user;
 	}
 
-	public void setUser(UserForm user) {
+	public void setUser(UserRegForm user) {
 		this.user = user;
 	}
 

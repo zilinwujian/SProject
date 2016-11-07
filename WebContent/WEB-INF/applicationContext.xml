@@ -261,6 +261,12 @@
 		</property>
 	</bean>
 	
+	<bean id="allriskAction" class="com.ynwi.ssh.action.AllRiskAction">
+		<property name="riskmanager">
+			<ref bean="riskmanager" />
+		</property>
+	</bean>
+	
 	<bean id="riskAction" class="com.ynwi.ssh.action.RiskAction">
 		<property name="riskmanager">
 			<ref bean="riskmanager" />

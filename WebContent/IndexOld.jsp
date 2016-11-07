@@ -89,10 +89,37 @@
                         Dashboard
                     </a>
                 </li>
-                <li class="current"><a href="#"><img src="/SSHProject/img/icons/menu/layout.png" alt="" />Options On Risk</a>
+                <li class="current"><a href="#"><img src="/SSHProject/img/icons/menu/layout.png" alt="" />Waitress</a>
                     <ul>
+                         <li><a href="Commditys.jsp">Commdity</a></li>
                          <li><a href="RiskCreate.jsp">Create Risk</a></li>
                          <li><a href="allriskaction.action">Risk List Check</a></li>
+                         <li><a href="CPCreate.jsp">CommdityPlanCreate</a></li>
+                         <li><a href="record.action">Recordlist</a></li>
+                         <li><a href="allorderaction.action">Orderlist</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="/SSHProject/img/icons/menu/brush.png" alt="" /> Member</a>
+                    <ul>
+                        <li><a href="Member.jsp">RegisterMember</a></li>
+                        <li><a href="MemberUpd.jsp">MemberInformationUpdate</a></li>
+                        <li><a href="memberfind.action">MemberInformation</a></li>
+                        <li><a href="OrderCreate.jsp">OrderCreate</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="/SSHProject/img/icons/menu/brush.png" alt="" /> Manager</a>
+                    <ul>
+                        <li><a href="allcpaction.action">CommodityPlansShow</a></li>
+                        <li><a href="allmemberaction.action">MemberList</a></li>
+                        <li><a href="allbuyaction.action">BuyList</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="/SSHProject/img/icons/menu/brush.png" alt="" />System Manager</a>
+                    <ul>
+                        <li><a href="allstoreaction.action">StoreList</a></li>
+                        <li><a href="StoreCreate.jsp">CreateStore</a></li>
+                        <li><a href="allclerkaction.action">ClerkList</a></li>
+                        <li><a href="ClerkCreate.jsp">CreateClerk</a></li>
                     </ul>
                 </li>
               </ul>
@@ -116,17 +143,26 @@
     </div>
     <div class="content dashboard">
         <div class="center">
-            <a href="allriskaction.action" class="shortcut">
+        <a href="MemberShow.jsp" class="shortcut">
                 <img src="/SSHProject/img/page.png" alt="" width="48" height="48"/>
-                Risk list
+                Member Info
             </a>
-            <a href="RiskCreate.jsp" class="shortcut">
+            <a href="Commditys.jsp" class="shortcut">
                 <img src="/SSHProject/img/picture.png" alt="" width="48" height="48" />
-                Create risk
+                Buy Something
             </a>
+            <a href="Cplist.jsp" class="shortcut">
+                <img src="/SSHProject/img/event.png" alt="" width="48" height="48" />
+                Commodity Plans
+            </a>
+            <a href="Storelist.jsp" class="shortcut last">
+                <img src="/SSHProject/img/contact.png" alt="" width="48" height="48" />
+                Stores
+            </a>
+            
             <div class="cb"></div>
         </div>
-        <p>选择左侧操作或图标操作</p>
+        <p>Icons by <a href="http://icondrawer.com/">icondrawer.com</a></p>
     </div>
 </div>
 

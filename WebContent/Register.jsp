@@ -1,19 +1,53 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>User Register Page</title>
-</head>
-<body>
+    <head>
+        <title>Register</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Register Page" />
+        <meta name="keywords" content="Register your account with a character of Risk"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="/SSHProject/css/stylerisk.css" />
+		<script src="/SSHProject/js/cufon-yui.js" type="text/javascript"></script>
+		<script src="/SSHProject/js/ChunkFive_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h3',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.back');
+		</script>
+    </head>
+    <body>
+		<div class="wrapper">
+			<h1>Animated Form Switching</h1>
+			<h2>Demo: click the <span>orange links</span> to see the form animating and switching</h2>
+			<div class="content">
+					<s:form action="register">
+						<h3>Register</h3>
+						<div>
+							<label>Account:</label>
+							<input type="text" name="user.username" id="login">
+						</div>
+						<div>
+							<label>Password: </label>
+							<input type="password" name="user.password" id="password">
+						</div>
+						<div>
+							<label>Character: </label>
+							<input type="text" name="user.type" id="password">
+						</div>
+						<div class="bottom">
+							<input type="submit" value="Register Your Account"></input>
+							<div class="clear"></div>
+						</div>
+					</s:form>
+				<div class="clear"></div>
+			</div>
+			<a class="back" href="http://tympanus.net/codrops/2011/01/06/animated-form-switching/">back to the Codrops tutorial</a>
+		</div>
+		
 
-	<s:form action="register">
-		<s:textfield name="user.username" label="用户名"></s:textfield>
-		<s:password name="user.password" label="密码"></s:password>
-		<s:submit value="注册"></s:submit>
-	</s:form>
-
-</body>
+		<!-- The JavaScript -->
+		
+    </body>
 </html>

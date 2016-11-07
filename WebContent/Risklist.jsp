@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Risk Create </title>
+<title>Risk Page</title>
         <!-- jQuery AND jQueryUI -->
         <script type="text/javascript" src="/SSHProject/js/libs/jquery/1.6/jquery.min.js"></script>
         <script type="text/javascript" src="/SSHProject/js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
@@ -19,7 +19,7 @@
 </head>
 <body>
  <script type="text/javascript" src="/SSHProject/content/settings/main.js"></script>
-			<link rel="stylesheet" href="/SSHProject/content/settings/style.css" />
+<link rel="stylesheet" href="/SSHProject/content/settings/style.css" />
 
 
   <div class="settings" id="settings">
@@ -78,8 +78,8 @@
         <!--            
                 SIDEBAR
                          --> 
-           <div id="sidebar">
-             <ul>
+        <div id="sidebar">
+            <ul>
                 <li>
                     <a href="Index.jsp">
                         <img src="/SSHProject/img/icons/menu/inbox.png" alt="" />
@@ -88,48 +88,52 @@
                 </li>
                 <li class="current"><a href="#"><img src="/SSHProject/img/icons/menu/layout.png" alt="" />Options On Risk</a>
                     <ul>
-                         <li class="current"><a href="RiskCreate.jsp">Create Risk</a></li>
-                         <li><a href="allriskaction.action">Risk List Check</a></li>
+                         <li ><a href="RiskCreate.jsp">Create Risk</a></li>
+                         <li class="current"><a href="allriskaction.action">Risk List Check</a></li>
                     </ul>
                 </li>
               </ul>
-        </div>  
+
+        </div>
+               
+
 
 	<div id="content" class="white">
-            <h1><img src="img/icons/posts.png" alt="" /> Forms</h1>
+            <h1><img src="img/icons/posts.png" alt="" /> Risk List</h1>
 
 <div class="bloc">
-    <div class="title">创建风险条目</div>
+    <div class="title">Show Risk list</div>
     <div class="content">
-      <s:form action="riskaction">
-        <div class="input">
-            <label for="input1">风险内容</label>
-            <input type="text" name = "risk.content" id="input1"/>
-        </div>
-        <div class="input">
-            <label for="input1">可能性（高中低）</label>
-            <input type="text" name = "risk.possibility" id="input1"/>
-        </div>
-        <div class="input">
-            <label for="input1">影响程度（高中低）</label>
-            <input type="text" name = "risk.influence" id="input1"/>
-        </div>
-        <div class="input">
-            <label for="input1">触发器/阈值</label>
-            <input type="text" name = "risk.triggerthreshold" id="input1"/>
-        </div>
-        <div class="input">
-            <label for="input1">提交者</label>
-            <input type="text" name = "risk.submitter" id="input1"/>
-        </div>
-        <div class="input">
-            <label for="input1">跟踪者</label>
-            <input type="text" name = "risk.spoorer" id="input1"/>
-        </div>
-        <div class="submit">
-            <input type="submit" value="Create Risk Entry" />
-        </div>
-       </s:form>
+         <table>
+            <thead>
+                <tr>
+                    <th>Content</th>
+                    <th>Possibility</th>
+                    <th>Influence</th>
+                    <th>Trigger/threshold</th>
+                    <th>Submitter</th>
+
+                    <th>Spoorer</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<s:iterator value="#request.risklist" id="us">  
+                    <tr>
+                     <td><s:property value="#us.content"/>  </td>
+                    <td>
+                    <s:property value="#us.possibility"/>
+                    </td>
+                    <td><s:property value="#us.influence"/>  </td>
+
+                    <td><s:property value="#us.triggerthreshold"/>  </td>
+                    <td><s:property value="#us.submitter"/>  </td>
+                    <td>
+                    	<s:property value="#us.spoorer"/>
+                    </td>
+                    </tr>
+               </s:iterator> 
+                            </tbody>
+        </table>
     </div>
 </div>     
 

@@ -1,36 +1,50 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <link rel="stylesheet" href="/SSHProject/css/styles.css">
-<title>User Register Page</title>
-</head>
-<body>
+    <head>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Login Risk Management System" />
+        <meta name="keywords" content="Manage Your Risk With Character"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="/SSHProject/css/stylerisk.css" />
+		<script src="/SSHProject/js/cufon-yui.js" type="text/javascript"></script>
+		<script src="/SSHProject/js/ChunkFive_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h3',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.back');
+		</script>
+    </head>
+    <body>
+		<div class="wrapper">
+			<h1>Animated Form Switching</h1>
+			<h2>Demo: click the <span>orange links</span> to see the form animating and switching</h2>
+			<div class="content">
+					<s:form action="check">
+						<h3>Login</h3>
+						<div>
+							<label>Username:</label>
+							<input type="text" name="user.username" id="login">
+						</div>
+						<div>
+							<label>Password: </label>
+							<input type="password" name="user.password" id="password">
+						</div>
+						<div class="bottom">
+							<input type="submit" value="Login"></input>
+							<a href="Register.jsp" rel="register" class="linkform">You don't have an account yet? Register here</a>
+							<div class="clear"></div>
+						</div>
+					</s:form>
+				<div class="clear"></div>
+			</div>
+			<a class="back" href="http://tympanus.net/codrops/2011/01/06/animated-form-switching/">back to the Codrops tutorial</a>
+		</div>
+		
 
-	<s:form action="check">
-      		<label for="login">Email:</label>
-      		<input type="text" name="user.username" id="login" value="name@example.com">
-      		<label for="password">Password:</label>
-      		<input type="password" name="user.password" id="password" value="qwert">
-
-    	<p class="login-submit">
-      		<button type="submit" class="login-button">Login</button>
-
-    <p class="forgot-password"><a href="Register.jsp">Not Sign in?Sign in </a>
-	</s:form>
-  <section class="about">
-    <p class="about-links">
-      <a href="http://www.cssflow.com/snippets/dark-login-form" target="_parent">View Article</a>
-      <a href="http://www.cssflow.com/snippets/dark-login-form.zip" target="_parent">Download</a>
-    </p>
-    <p class="about-author">
-      &copy; 2012&ndash;2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
-      <a href="http://www.cssflow.com/mit-license" target="_blank">MIT License</a><br>
-      Original PSD by <a href="http://365psd.com/day/2-234/" target="_blank">Rich McNabb</a>
-  </section>
-</body>
+		<!-- The JavaScript -->
+		
+    </body>
 </html>

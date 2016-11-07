@@ -1,5 +1,7 @@
 package com.ynwi.ssh.serviceImpl;
 
+import java.util.ArrayList;
+
 import org.hibernate.HibernateException;
 import org.springframework.beans.BeanUtils;
 
@@ -32,6 +34,12 @@ public class RiskManagerImpl implements RiskManager{
 	public void update(RiskForm form) throws HibernateException {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public ArrayList<Risk> getrisklist() throws HibernateException {
+		// TODO Auto-generated method stub
+		return dao.getrisklist();
 	}
 
 }
