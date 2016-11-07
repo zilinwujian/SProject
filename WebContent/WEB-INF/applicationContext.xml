@@ -78,6 +78,12 @@
 		</property>
 	</bean>
 	
+	<bean id="riskDao" class="com.ynwi.ssh.daoImpl.RiskDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
 	<bean id="buyDao" class="com.ynwi.ssh.daoImpl.BuydaoImpl">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
@@ -133,6 +139,12 @@
 	<bean id="orderManager" class="com.ynwi.ssh.serviceImpl.OrderManagerImpl">
 		<property name="dao">
 			<ref bean="orderDao" />
+		</property>
+	</bean>
+	
+	<bean id="riskmanager" class="com.ynwi.ssh.serviceImpl.RiskManagerImpl">
+		<property name="dao">
+			<ref bean="riskDao" />
 		</property>
 	</bean>
 
@@ -246,6 +258,12 @@
 	<bean id="allorderAction" class="com.ynwi.ssh.action.AllOdAction">
 		<property name="ordermanager">
 			<ref bean="orderManager" />
+		</property>
+	</bean>
+	
+	<bean id="riskAction" class="com.ynwi.ssh.action.RiskAction">
+		<property name="riskmanager">
+			<ref bean="riskmanager" />
 		</property>
 	</bean>
 	

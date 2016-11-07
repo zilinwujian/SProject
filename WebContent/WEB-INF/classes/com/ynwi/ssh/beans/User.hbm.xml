@@ -130,4 +130,22 @@
 		<property name="status" column="status" type="int"
 			not-null="true"/>
 	</class>
+	
+	<class name="Risk" table="risk">
+		<id name="riskid" column="riskid">	
+			<generator class="native"></generator>
+		</id>
+		<property name="content" column="content" type="java.lang.String"
+			not-null="true" length="200" />
+		<property name="possibility" column="possibility" type="java.lang.String"
+			not-null="true" length="45" />
+		<property name="influence" column="influence" type="java.lang.String"
+			not-null="true" length="45" />
+		<property name="triggerthreshold" column="triggerthreshold" type="java.lang.String"
+			not-null="true" length="45" />
+		<property name="submitter" column="submitter" type="java.lang.String"
+			not-null="true" length="45" />
+		<property name="spoorer" column="spoorer" type="java.lang.String"
+			not-null="true" length="45" />
+	</class>
 </hibernate-mapping>

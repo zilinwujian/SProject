@@ -118,8 +118,17 @@
 			<result name="success">/Index.jsp</result>
 			<result name="error">/Fail.jsp</result>
 		</action>
+		
+		
+		
 		<action name="ordersell" class="ordersell">
 			<result name="input">/Odlist.jsp</result>
+			<result name="success">/Index.jsp</result>
+			<result name="error">/Fail.jsp</result>
+		</action>
+		
+		<action name="riskaction" class="riskAction">
+			<result name="input">/RiskCreate.jsp</result>
 			<result name="success">/Index.jsp</result>
 			<result name="error">/Fail.jsp</result>
 		</action>
