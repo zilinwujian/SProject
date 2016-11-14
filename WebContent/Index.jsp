@@ -8,21 +8,21 @@
 
         
         <!-- jQuery AND jQueryUI -->
-        <script type="text/javascript" src="/SSHProject/js/libs/jquery/1.6/jquery.min.js"></script>
-        <script type="text/javascript" src="/SSHProject/js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/Demo/js/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="/Demo/js/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
         
         <!-- Compressed Version
         <link type="text/css" rel="stylesheet" href="min/b=CoreAdmin&f=css/reset.css,css/style.css,css/jqueryui/jqueryui.css,js/jwysiwyg/jquery.wysiwyg.old-school.css,js/zoombox/zoombox.css" />
         <script type="text/javascript" src="min/b=CoreAdmin/js&f=cookie/jquery.cookie.js,jwysiwyg/jquery.wysiwyg.js,tooltipsy.min.js,iphone-style-checkboxes.js,excanvas.js,zoombox/zoombox.js,visualize.jQuery.js,jquery.uniform.min.js,main.js"></script>
         -->
-        <link rel="stylesheet" href="/SSHProject/css/min.css" />
-        <script type="text/javascript" src="/SSHProject/js/min.js"></script>
+        <link rel="stylesheet" href="/Demo/css/min.css" />
+        <script type="text/javascript" src="/Demo/js/min.js"></script>
         
     </head>
     <body>
         
-        <script type="text/javascript" src="/SSHProject/content/settings/main.js"></script>
-<link rel="stylesheet" href="/SSHProject/content/settings/style.css" />
+        <script type="text/javascript" src="/Demo/content/settings/main.js"></script>
+<link rel="stylesheet" href="/Demo/content/settings/style.css" />
 
 
   <div class="settings" id="settings">
