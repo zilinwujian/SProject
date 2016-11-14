@@ -68,7 +68,7 @@
 	
 	<bean id="memberDao" class="com.ynwi.ssh.daoImpl.MemberDaoImpl">
 		<property name="sessionFactory">
-			<ref bean="sessionFactory" /> 
+			<ref bean="sessionFactory" />
 		</property>
 	</bean>
 	
