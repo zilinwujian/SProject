@@ -148,4 +148,11 @@
 		<property name="spoorer" column="spoorer" type="java.lang.String"
 			not-null="true" length="45" />
 	</class>
+	
+	<class name="RiskTime" table="riskFliter">
+		<property name="beginTime" column="beginTime" type="java.lang.String" 
+			not-null="true" length="45" />
+		<property name="endTime" column="endTime" type="java.lang.String"
+			not-null="true" length="45" />
+	</class>
 </hibernate-mapping>
